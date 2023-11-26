@@ -2,7 +2,7 @@
 * An object/segmentation detection app created using streamlit. Refer below for all the features of the app
 * Model used: https://github.com/ultralytics/ultralytics
 * App link: https://yolov8-app.streamlit.app/
-* Link for EasyOCR: https://github.com/JaidedAI/EasyOCR
+* Link to EasyOCR: https://github.com/JaidedAI/EasyOCR
 * NOTE: The streamlit app might not work if the GitLFS's free bandwidth exceeds 1 gb.
 
 # App Features 
