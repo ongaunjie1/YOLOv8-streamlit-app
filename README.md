@@ -98,7 +98,7 @@
 ### Verify any one of the images
 ![image](https://github.com/ongaunjie1/yolov8-streamlit/assets/118142884/c673fc62-7dbe-4b94-8d39-241d56cf4522)
 
-### NOTE: Also, the above trains the model using yolov8's default hyperparmeters. Of course, you can play around with the hyperparameter to see if your model improves.
+### NOTE: The example above trains the model using yolov8's default hyperparmeters. Feel free to change some of the values of the hyperparameters to see if it improves the accuracy of the model.
 
 
 
