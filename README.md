@@ -1,4 +1,4 @@
-![image](https://github.com/ongaunjie1/YOLOv8-streamlit-app/assets/118142884/50c29500-8eed-4bf0-8587-0310947564ed)# yolov8-streamlit-app 
+# yolov8-streamlit-app 
 * An object/segmentation detection app created using streamlit. Refer below for all the features of the app
 * Model used: https://github.com/ultralytics/ultralytics
 * App link: https://yolov8-app.streamlit.app/
