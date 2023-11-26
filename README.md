@@ -35,7 +35,7 @@
 
 # How was it used in this project ?
 
-1) YOLOv8 is employed for license plate detection in an image, accurately locating the license plate's position.
+1) The fine-tuned yolov8 model is used for the license plate detection in an image, accurately locating the license plate's position.
 
 2) The detected license plate region is cropped from the original image to isolate the license plate.
 
