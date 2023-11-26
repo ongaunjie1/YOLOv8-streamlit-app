@@ -2,6 +2,7 @@
 * An object/segmentation detection app created using streamlit. Refer below for all the features of the app
 * Model used: https://github.com/ultralytics/ultralytics
 * App link: https://yolov8-app.streamlit.app/
+* NOTE: The streamlit app might not work if the GitLFS's free bandwidth exceeds 1 gb.
 
 # App Features 
 * Object **detection/segmentation** using pre-trained yoloV8 model (trained on Open Images V7 dataset with 600 distinct classes) , refer to openimages.txt for the list of objects detectable using the base model
