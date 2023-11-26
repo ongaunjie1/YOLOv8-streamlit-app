@@ -2,6 +2,7 @@
 * An object/segmentation detection app created using streamlit. Refer below for all the features of the app
 * Model used: https://github.com/ultralytics/ultralytics
 * App link: https://yolov8-app.streamlit.app/
+* Link for EasyOCR: https://github.com/JaidedAI/EasyOCR
 * NOTE: The streamlit app might not work if the GitLFS's free bandwidth exceeds 1 gb.
 
 # App Features 
@@ -28,6 +29,21 @@
 * mAP50 measures the average precision at an Intersection over Union (IoU) threshold of 0.5, while mAP50-95 considers the average precision across IoU thresholds from 0.5 to 0.95.
 * Higher values indicate better accuracy and robustness in detecting objects across different IoU levels.
 * IOU is the ratio of the area of overlap between the predicted and actual bounding boxes to the area of their union
+
+# What is EasyOCR ?
+* EasyOCR is an open-source Python library for Optical Character Recognition (OCR). Its primary purpose is to recognize and extract text from images, enabling applications to convert images containing printed or handwritten text into machine-readable and editable text.
+
+# How was it used in this project ?
+
+1) YOLOv8 is employed for license plate detection in an image, accurately locating the license plate's position.
+
+2) The detected license plate region is cropped from the original image to isolate the license plate.
+
+3) The cropped license plate image is converted to black and white, simplifying the image and emphasizing text features.
+
+4) OpenCV (cv2) is used to enhance the contrast of the black and white license plate image, making the text more distinct and improving OCR accuracy.
+
+5) EasyOCR is applied to the preprocessed license plate image to perform Optical Character Recognition (OCR), extracting and reading the text content from the license plate.
 
 # How to use the app?
 ## Main page of the app
