@@ -1,4 +1,4 @@
-# yolov8-streamlit-app 
+![image](https://github.com/ongaunjie1/YOLOv8-streamlit-app/assets/118142884/50c29500-8eed-4bf0-8587-0310947564ed)# yolov8-streamlit-app 
 * An object/segmentation detection app created using streamlit. Refer below for all the features of the app
 * Model used: https://github.com/ultralytics/ultralytics
 * App link: https://yolov8-app.streamlit.app/
@@ -66,26 +66,32 @@
 ## Step 1: Annotate your custom images using RoboFlow
 ![image](https://github.com/ongaunjie1/yolov8-streamlit/assets/118142884/ee93751a-922a-466f-bc9e-a90392cfda2f)
 
-## Step 2: Augment the images if needed
+## Step 2: Split images into train, val, test
+![image](https://github.com/ongaunjie1/YOLOv8-streamlit-app/assets/118142884/279223ed-48da-44e4-876f-ac611522451c)
+
+## Step 3: Pre-process the images (Resize, change orientation and etc)
+![image](https://github.com/ongaunjie1/YOLOv8-streamlit-app/assets/118142884/bee4e263-d10a-4856-9f7e-baea2be024a6)
+
+## Step 4: Augment the images if needed
 ![image](https://github.com/ongaunjie1/yolov8-streamlit/assets/118142884/7e81982b-38a1-4373-abdb-d93ff51c766c)
 
-## Step 3: Select the appropriate yolov8 model 
+## Step 5: Select the appropriate yolov8 model 
 ![image](https://github.com/ongaunjie1/yolov8-streamlit/assets/118142884/5f10edbf-e12b-4588-89f6-5cb4d14fe2bc)
 
-## Step 4: Fine-tune the yolov8 model using the annotated images (fine-tune using personal gpu or use a gpu from google colab)
+## Step 6: Fine-tune the yolov8 model using the annotated images (fine-tune using personal gpu or use a gpu from google colab)
 ### RoboFlow will generate a .yaml file automatically, verify it if needed and then proceed with training the model
 ![image](https://github.com/ongaunjie1/yolov8-streamlit/assets/118142884/3e02d882-73ca-4ef8-b1ce-4251212f9f6f)
 ```
 !yolo task=detect mode=train model=yolov8m.pt data=/content/drive/MyDrive/carplate/car-plate-detection-1/data.yaml epochs=70 imgsz=640 
 ```
 
-## Step 5: Validate fine-tuned model
+## Step 7: Validate fine-tuned model
 ```
 !yolo task=detect mode=val model=/content/drive/MyDrive/carplate/runs/detect/train/weights/best.pt data=/content/drive/MyDrive/carplate/car-plate-detection-1/data.yaml
 ```
 ![image](https://github.com/ongaunjie1/yolov8-streamlit/assets/118142884/242109a8-3859-455c-b0b3-65f2d2c7ccb7)
 
-## Step 6: Inference the custom model on test dataset
+## Step 8: Inference the custom model on test dataset
 ```
 !yolo task=detect mode=predict model=/content/drive/MyDrive/carplate/runs/detect/train/weights/best.pt conf=0.25 source=/content/drive/MyDrive/carplate/car-plate-detection-1/test/images
 ```
